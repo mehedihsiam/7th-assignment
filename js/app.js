@@ -18,7 +18,7 @@ const showProducts = (products) => {
       <div>
         <img class="product-image" src=${image}>
       </div>
-      <h3 class="fs-5 fw-bold mt-4">${product.title}</h3>
+      <h5 class="fs-5 fw-bold mt-4">${product.title}</h5>
       <p class="fs-6">Category: ${product.category}</p>
       <h2 class="fw-bold fs-6">Price: $ ${product.price}</h2>
       <small class="d-block fw-bold">Rating: ${product.rating.rate} <i class="fas fa-star text-warning"></i></small>
@@ -94,8 +94,9 @@ const displayDetails = (singleProduct) => {
   const container = document.getElementById('details-container');
   container.innerHTML = `
   <img class="product-image" src=${singleProduct.image}>
-  <h5 class="fw-bold text-success">${singleProduct.title}</h5>
-  <p>${singleProduct.description.slice(0, 200)}</p>
+  <h5 class="fw-bold text-info">${singleProduct.title}</h5>
+  <p class="text-justify">${singleProduct.description.slice(0, 200)}</p>
+  <button class="btn btn-warning">Place Order</button>
 
   `;
 }

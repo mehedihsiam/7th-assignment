@@ -49,7 +49,6 @@ body {
 }
 .product-image {
   width: 150px;
-  height: 150px;
 }
 .cart {
   width: 350px;
@@ -62,6 +61,11 @@ body {
 }
 .cart-main {
   padding-right: 30px;
+}
+
+.footer{
+  height: 70px;
+  width: 100%;
 }
 @media only screen and (max-width: 768px) {
   #all-products {
