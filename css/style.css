@@ -2,6 +2,9 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.custom-text{
+  color: #eab902
+}
 .search-field {
   border: none;
   border-radius: 50px;
