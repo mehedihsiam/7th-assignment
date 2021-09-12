@@ -54,9 +54,10 @@ const updatePrice = (id, value) => {
 };
 
 // set innerText function
-const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = value;
-};
+// const setInnerText = (id, value) => {
+//   document.getElementById(id).innerText = value;
+//   console.log(value);
+// };
 
 // update delivery charge and total Tax
 const updateTaxAndCharge = () => {
@@ -83,6 +84,8 @@ const updateTotal = () => {
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
 
+
+// single product details container function
 const detailsContainer = (productID) => {
   const url = `https://fakestoreapi.com/products/${productID}`;
   fetch(url)
