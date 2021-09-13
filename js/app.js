@@ -76,7 +76,7 @@ const updateTaxAndCharge = () => {
     setInnerText("total-tax", (priceConverted * 0.4).toFixed(2));
   }
   else {
-    setInnerText("delivery-charge", 10);
+    setInnerText("delivery-charge", 15);
     setInnerText("total-tax", (priceConverted * 0.1).toFixed(2));
   }
 };
